@@ -1,6 +1,8 @@
-import { Stack } from "@mui/material";
+import { Stack, Button } from "@mui/material";
+import { MenuOutlined } from "@mui/icons-material";
 import React from "react";
 import Navbar from "./Navbar";
+
 const Header: React.FC = () => {
   return (
     <>
@@ -20,7 +22,7 @@ const Header: React.FC = () => {
         />
         <Stack
           flexDirection={"row"}
-          width={"34.5rem"}
+          width={"34rem"}
           height={"5rem"}
           justifyContent={"space-around"}
           alignItems={"center"}
@@ -29,7 +31,9 @@ const Header: React.FC = () => {
         >
           <Navbar />
         </Stack>
-        Menu
+        <Button color="inherit" size="large">
+          <MenuOutlined fontSize={"large"} />
+        </Button>
       </Stack>
     </>
   );

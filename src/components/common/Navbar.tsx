@@ -6,6 +6,7 @@ import {
   FavoriteBorderOutlined,
   PersonOutlineOutlined,
 } from "@mui/icons-material";
+
 const Navbar = () => {
   return (
     <>
