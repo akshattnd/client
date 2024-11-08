@@ -23,11 +23,10 @@ const Header: React.FC = () => {
         <Stack
           flexDirection={"row"}
           width={"34rem"}
-          height={"5rem"}
+          height={"4rem"}
           justifyContent={"space-around"}
           alignItems={"center"}
           zIndex={2}
-          bgcolor={"aliceblue"}
         >
           <Navbar />
         </Stack>
