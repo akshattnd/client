@@ -3,6 +3,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 const TextFieldBlack = {
   "& .MuiOutlinedInput-root": {
+    borderRadius: "1rem",
     "&.Mui-focused fieldset": {
       borderColor: "black",
     },
@@ -31,12 +32,14 @@ const SingUp = () => {
       sx={{
         backgroundImage: `url(/register-bg.webp)`,
         backgroundRepeat: "no-repeat",
-        backgroundSize: "100% 20rem",
+        backgroundSize: "100% 24rem",
         objectFit: "cover",
       }}
     >
-      <Stack flexDirection={"column"} width={"35%"} gap={2} mt={"2rem"}>
-        <Typography variant="h5">Log in with your Instagram account</Typography>
+      <Stack flexDirection={"column"} width={"32%"} gap={2} mt={"2rem"}>
+        <Typography variant="h5" className="text-gray-600">
+          Log in with your Instagram account
+        </Typography>
         <TextField
           id="outlined-basic"
           placeholder="username, phone or email"
@@ -59,20 +62,24 @@ const SingUp = () => {
             backgroundColor: "white",
             color: "gray",
             ":hover": { color: "black" },
+            borderRadius: ".8rem",
           }}
           fullWidth
         >
           Sign Up
         </Button>
-        <Typography variant="subtitle2" alignSelf={"center"}>
+        <Typography variant="subtitle1" alignSelf={"center"}>
           Already have accout ?
           <Button
             onClick={() => {
               handleSignIn();
             }}
-            sx={{ textTransform: " lowercase" }}
+            sx={{
+              textTransform: " lowercase",
+              paddingLeft: "0",
+            }}
           >
-            sign in
+            <Typography variant="subtitle1">sign in</Typography>
           </Button>
         </Typography>
       </Stack>
